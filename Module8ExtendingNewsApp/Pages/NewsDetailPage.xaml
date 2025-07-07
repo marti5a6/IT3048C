@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Module8ExtendingNewsApp.Pages.NewsDetailPage"
+             Title="NewsDetailPage">
+    <Grid RowDefinitions="*, *, *, *"
+        ColumnDefinitions="*, *"
+        Padding="0">
+
+        <Border Grid.Row="0"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            Stroke="Black"
+            StrokeThickness="3"
+            StrokeShape="RoundRectangle 20">
+            <Label FontSize="25"
+                FontAttributes="Bold"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"
+                Text="News Details"/>
+        </Border>
+
+        <Border Grid.Row="1"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            Stroke="Black"
+            StrokeThickness="3"
+            StrokeShape="RoundRectangle 20">
+            <Image x:Name="ArticleImage"
+                Source="null" />
+        </Border>
+
+        <Border Grid.Row="2"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            Stroke="Black"
+            StrokeThickness="3"
+            StrokeShape="RoundRectangle 20">
+            <Label FontSize="15"
+                HorizontalTextAlignment="Start"
+                VerticalTextAlignment="Center"
+                x:Name="ArticleContent"
+                Text="Dynamic Content (DEBUG)"/>
+        </Border>
+
+        <Border WidthRequest="175"
+            HeightRequest="100"
+            Grid.Row="3"
+            Grid.Column="0"
+            BackgroundColor="White"
+            Stroke="Black"
+            StrokeThickness="3"
+            StrokeShape="RoundRectangle 20">
+            <Button BackgroundColor="Transparent"
+                Text="Go Back"
+                TextColor="Black"
+                FontSize="20"
+                FontAttributes="Bold"
+                x:Name="BtnGoBack"
+                Clicked="BtnGoBack_Clicked" />
+        </Border>
+
+        <Border WidthRequest="175"
+            HeightRequest="100"
+            Grid.Row="3"
+            Grid.Column="1"
+            BackgroundColor="White"
+            Stroke="Black"
+            StrokeThickness="3"
+            StrokeShape="RoundRectangle 20">
+            <Button BackgroundColor="Transparent"
+                Text="Restart"
+                TextColor="Black"
+                FontSize="20"
+                FontAttributes="Bold"
+                x:Name="BtnRestart"
+                Clicked="BtnRestart_Clicked" />
+        </Border>
+    </Grid>
+</ContentPage>
