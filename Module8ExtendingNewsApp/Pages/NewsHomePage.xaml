@@ -28,10 +28,10 @@
             
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <Border Padding="10" WidthRequest="150">
+                    <Border Padding="10" WidthRequest="350" BackgroundColor="White">
                         <VerticalStackLayout Padding="0" Spacing="0" VerticalOptions="Center">
-                            <Image HeightRequest="50" Aspect="AspectFit" Source="{Binding ImageUrl}"/>
-                            <Label FontSize="Medium" HorizontalOptions="Center" Text="{Binding Name}"/>
+                            <Image HeightRequest="100" Aspect="AspectFit" Source="{Binding ImageUrl}"/>
+                            <Label FontSize="Medium" HorizontalOptions="Center" Text="{Binding Name}" TextColor="Black"/>
                         </VerticalStackLayout>
                     </Border>
                 </DataTemplate>

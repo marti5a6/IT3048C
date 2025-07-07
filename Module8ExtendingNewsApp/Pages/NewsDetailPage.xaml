@@ -3,44 +3,46 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Module8ExtendingNewsApp.Pages.NewsDetailPage"
              Title="NewsDetailPage">
-    <Grid RowDefinitions="*, *, *, *"
+    <Grid RowDefinitions="*, 3*, 2*, 2*"
         ColumnDefinitions="*, *"
         Padding="0">
 
-        <Border Grid.Row="0"
+        <Label Grid.Row="0"
             Grid.Column="0"
             Grid.ColumnSpan="2"
-            Stroke="Black"
-            StrokeThickness="3"
-            StrokeShape="RoundRectangle 20">
-            <Label FontSize="25"
-                FontAttributes="Bold"
-                HorizontalTextAlignment="Center"
-                VerticalTextAlignment="Center"
-                Text="News Details"/>
-        </Border>
+            FontSize="25"
+            FontAttributes="Bold"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center"
+            Text="News Details"/>
 
-        <Border Grid.Row="1"
+        <Border Margin="20" Grid.Row="1"
             Grid.Column="0"
             Grid.ColumnSpan="2"
             Stroke="Black"
             StrokeThickness="3"
-            StrokeShape="RoundRectangle 20">
-            <Image x:Name="ArticleImage"
+            StrokeShape="RoundRectangle 20"
+                BackgroundColor="White">
+            <Image Margin="10"
+                x:Name="ArticleImage"
                 Source="null" />
         </Border>
 
-        <Border Grid.Row="2"
+        <Border Margin="20"
+            Grid.Row="2"
             Grid.Column="0"
             Grid.ColumnSpan="2"
             Stroke="Black"
             StrokeThickness="3"
-            StrokeShape="RoundRectangle 20">
-            <Label FontSize="15"
+            StrokeShape="RoundRectangle 20"
+            BackgroundColor="White">
+            <Label Margin="10"
+                FontSize="15"
                 HorizontalTextAlignment="Start"
                 VerticalTextAlignment="Center"
                 x:Name="ArticleContent"
-                Text="Dynamic Content (DEBUG)"/>
+                Text="Dynamic Content (DEBUG)"
+                TextColor="Black"/>
         </Border>
 
         <Border WidthRequest="175"

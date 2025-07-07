@@ -20,7 +20,8 @@
             Grid.Column="0"
             x:Name="CvNews"
             SelectionMode="Single"
-            SelectionChanged="ArticleSelected">
+            SelectionChanged="ArticleSelected"
+            Margin="20">
             
             <CollectionView.ItemsLayout>
                 <LinearItemsLayout Orientation="Vertical" ItemSpacing="15"/>
@@ -28,10 +29,10 @@
             
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <Border Padding="5" Margin="5">
+                    <Border Padding="5" Margin="5" Stroke="Black" StrokeThickness="3" StrokeShape="RoundRectangle 20" BackgroundColor="White">
                         <VerticalStackLayout Padding="10" Spacing="0" VerticalOptions="Center">
-                            <Image HeightRequest="200" Aspect="AspectFit"  Source="{Binding Image}"/>
-                            <Label FontSize="Medium" Text="{Binding Title}"/>
+                            <Image HeightRequest="200" Aspect="AspectFit" Margin="20" Source="{Binding Image}"/>
+                            <Label Margin="20" FontSize="Medium" Text="{Binding Title}" TextColor="Black"/>
                         </VerticalStackLayout>
                     </Border>
                 </DataTemplate>

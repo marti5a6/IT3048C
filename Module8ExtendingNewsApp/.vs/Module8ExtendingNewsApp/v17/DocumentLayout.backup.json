@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "E:\\Tony\\Documents\\dev\\school\\IT3048C\\Module8ExtendingNewsApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{74C341F0-8D98-42E8-AB2A-024F9BB56D82}|Module8ExtendingNewsApp.csproj|e:\\tony\\documents\\dev\\school\\it3048c\\module8extendingnewsapp\\pages\\newsdetailpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{74C341F0-8D98-42E8-AB2A-024F9BB56D82}|Module8ExtendingNewsApp.csproj|solutionrelative:pages\\newsdetailpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{74C341F0-8D98-42E8-AB2A-024F9BB56D82}|Module8ExtendingNewsApp.csproj|e:\\tony\\documents\\dev\\school\\it3048c\\module8extendingnewsapp\\pages\\newsdetailpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{74C341F0-8D98-42E8-AB2A-024F9BB56D82}|Module8ExtendingNewsApp.csproj|solutionrelative:pages\\newsdetailpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74C341F0-8D98-42E8-AB2A-024F9BB56D82}|Module8ExtendingNewsApp.csproj|e:\\tony\\documents\\dev\\school\\it3048c\\module8extendingnewsapp\\pages\\newsdetailpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{74C341F0-8D98-42E8-AB2A-024F9BB56D82}|Module8ExtendingNewsApp.csproj|solutionrelative:pages\\newsdetailpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,11 +18,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "NewsDetailPage.xaml",
               "DocumentMoniker": "E:\\Tony\\Documents\\dev\\school\\IT3048C\\Module8ExtendingNewsApp\\Pages\\NewsDetailPage.xaml",
               "RelativeDocumentMoniker": "Pages\\NewsDetailPage.xaml",
@@ -30,12 +30,11 @@
               "RelativeToolTip": "Pages\\NewsDetailPage.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-07T03:48:18.381Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-07T03:48:18.381Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "NewsDetailPage.xaml.cs",
               "DocumentMoniker": "E:\\Tony\\Documents\\dev\\school\\IT3048C\\Module8ExtendingNewsApp\\Pages\\NewsDetailPage.xaml.cs",
               "RelativeDocumentMoniker": "Pages\\NewsDetailPage.xaml.cs",
