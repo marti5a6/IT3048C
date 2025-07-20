@@ -1,71 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "E:\\Tony\\Documents\\dev\\school\\IT3048C\\Module10ContactListUsingMVVM\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{4CEA93DC-5549-4D58-80B7-464820B3B754}|Module10ContactListUsingMVVM.csproj|e:\\tony\\documents\\dev\\school\\it3048c\\module10contactlistusingmvvm\\models\\viewmodels\\contactslistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CEA93DC-5549-4D58-80B7-464820B3B754}|Module10ContactListUsingMVVM.csproj|solutionrelative:models\\viewmodels\\contactslistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4CEA93DC-5549-4D58-80B7-464820B3B754}|Module10ContactListUsingMVVM.csproj|e:\\tony\\documents\\dev\\school\\it3048c\\module10contactlistusingmvvm\\models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CEA93DC-5549-4D58-80B7-464820B3B754}|Module10ContactListUsingMVVM.csproj|solutionrelative:models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4CEA93DC-5549-4D58-80B7-464820B3B754}|Module10ContactListUsingMVVM.csproj|e:\\tony\\documents\\dev\\school\\it3048c\\module10contactlistusingmvvm\\models\\viewmodels\\contactsdetailviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CEA93DC-5549-4D58-80B7-464820B3B754}|Module10ContactListUsingMVVM.csproj|solutionrelative:models\\viewmodels\\contactsdetailviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ContactsListViewModel.cs",
-              "DocumentMoniker": "E:\\Tony\\Documents\\dev\\school\\IT3048C\\Module10ContactListUsingMVVM\\Models\\ViewModels\\ContactsListViewModel.cs",
-              "RelativeDocumentMoniker": "Models\\ViewModels\\ContactsListViewModel.cs",
-              "ToolTip": "E:\\Tony\\Documents\\dev\\school\\IT3048C\\Module10ContactListUsingMVVM\\Models\\ViewModels\\ContactsListViewModel.cs",
-              "RelativeToolTip": "Models\\ViewModels\\ContactsListViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T23:08:35.195Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ContactsDetailViewModel.cs",
-              "DocumentMoniker": "E:\\Tony\\Documents\\dev\\school\\IT3048C\\Module10ContactListUsingMVVM\\Models\\ViewModels\\ContactsDetailViewModel.cs",
-              "RelativeDocumentMoniker": "Models\\ViewModels\\ContactsDetailViewModel.cs",
-              "ToolTip": "E:\\Tony\\Documents\\dev\\school\\IT3048C\\Module10ContactListUsingMVVM\\Models\\ViewModels\\ContactsDetailViewModel.cs",
-              "RelativeToolTip": "Models\\ViewModels\\ContactsDetailViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T23:08:34.665Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Contact.cs",
-              "DocumentMoniker": "E:\\Tony\\Documents\\dev\\school\\IT3048C\\Module10ContactListUsingMVVM\\Models\\Contact.cs",
-              "RelativeDocumentMoniker": "Models\\Contact.cs",
-              "ToolTip": "E:\\Tony\\Documents\\dev\\school\\IT3048C\\Module10ContactListUsingMVVM\\Models\\Contact.cs",
-              "RelativeToolTip": "Models\\Contact.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T22:07:42.976Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }
