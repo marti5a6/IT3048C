@@ -1,8 +1,9 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 
-namespace Module10ContactListUsingMVVM.Models.ViewModels
+namespace Module10ContactListUsingMVVM.Models.ViewModels;
+
+partial class ContactsDetailViewModel : ObservableObject
 {
-    internal class ContactsDetailViewModel
-    {
-    }
+    [ObservableProperty]
+    private Contact contact;
 }

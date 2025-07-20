@@ -2,9 +2,20 @@
 using CommunityToolkit.Mvvm.Input;
 using System.Collections.ObjectModel;
 
-namespace Module10ContactListUsingMVVM.Models.ViewModels
+namespace Module10ContactListUsingMVVM.Models.ViewModels;
+
+partial class ContactsListViewModel : ObservableObject
 {
-    internal class ContactsListViewModel
+    [ObservableProperty]
+    private ObservableCollection<Contact> contacts = new();
+
+    [ObservableProperty]
+    private Contact contact = new();
+
+    [RelayCommand]
+    private void Add()
     {
+        Contacts.Add(Contact);
+        Contact = new();
     }
 }

@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Module10ContactListUsingMVVM")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+57c91bd8491d655e09b554460935d222fe53db49")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+f00732223b25e4b2bb20c2274fe21c0c97ca502c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Module10ContactListUsingMVVM")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Module10ContactListUsingMVVM")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
