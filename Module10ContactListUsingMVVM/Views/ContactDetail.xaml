@@ -5,14 +5,17 @@
              xmlns:vm="clr-namespace:Module10ContactListUsingMVVM.Models.ViewModels"
              x:DataType="vm:ContactDetailViewModel"
              Title="Contact Detail">
-    <TableView Intent="Data">
-        <TableRoot>
-            <TableSection>
-                <TextCell Text="Contact Name" Detail="{Binding Contact.ContactName}"/>
-                <TextCell Text="Contact Email" Detail="{Binding Contact.ContactEmail}"/>
-                <TextCell Text="Contact Phone" Detail="{Binding Contact.ContactPhone}"/>
-                <TextCell Text="Contact Description" Detail="{Binding Contact.ContactDescription}"/>
-            </TableSection>
-        </TableRoot>
-    </TableView>
+    <Grid>
+        <TableView Intent="Data">
+            <TableRoot>
+                <TableSection>
+                    <TextCell Text="Contact Name" Detail="{Binding Contact.ContactName}"/>
+                    <TextCell Text="Contact Email" Detail="{Binding Contact.ContactEmail}"/>
+                    <TextCell Text="Contact Phone" Detail="{Binding Contact.ContactPhone}"/>
+                    <TextCell Text="Contact Description" Detail="{Binding Contact.ContactDescription}"/>
+                </TableSection>
+            </TableRoot>
+        </TableView>
+        <Button Text="Back to Contacts" Clicked="Button_Clicked"/>
+    </Grid>
 </ContentPage>

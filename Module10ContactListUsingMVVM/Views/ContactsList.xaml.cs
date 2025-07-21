@@ -17,4 +17,9 @@ public partial class ContactsList : ContentPage
 		contactDetail.BindingContext = contactViewModel;
 		Navigation.PushAsync(contactDetail);
 	}
+
+	private void Button_Clicked (object sender, EventArgs e)
+	{
+		Navigation.PopToRootAsync();
+	}
 }
