@@ -12,7 +12,7 @@ public partial class ContactsList : ContentPage
 	private void Lv_ItemTapped(object sender, ItemTappedEventArgs e)
 	{
 		var contact = e.Item as Models.Contact;
-		var contactViewModel = new ContactsDetailViewModel { Contact = contact };
+		var contactViewModel = new ContactDetailViewModel { Contact = contact };
 		var contactDetail = new ContactDetail();
 		contactDetail.BindingContext = contactViewModel;
 		Navigation.PushAsync(contactDetail);
