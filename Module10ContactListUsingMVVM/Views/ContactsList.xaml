@@ -1,24 +1,54 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Module10ContactListUsingMVVM.Views.ContactsList"
-             xmlns:vm="clr-namespace:Module10ContactListUsingMVVM.Models.ViewModels"
-             xmlns:models="clr-namespace:Module10ContactListUsingMVVM.Models"
-             x:DataType="vm:ContactsListViewModel"
-             Title="Contacts List">
-    <Grid>
-        <ListView x:Name="Lv" ItemsSource="{Binding Contacts}" ItemTapped="Lv_ItemTapped" >
-            <ListView.Header>
-                <VerticalStackLayout BackgroundColor="DarkSlateGrey" Padding="10">
-                    <Label Text="Contacts" HorizontalOptions="Center" TextColor="White" FontAttributes="Bold"/>
-                </VerticalStackLayout>
-            </ListView.Header>
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Module10ContactListUsingMVVM.Views.ContactsList"
+    xmlns:vm="clr-namespace:Module10ContactListUsingMVVM.Models.ViewModels"
+    xmlns:models="clr-namespace:Module10ContactListUsingMVVM.Models"
+    x:DataType="vm:ContactsListViewModel">
+    <Grid BackgroundColor="CornflowerBlue"
+        Padding="10"
+        RowDefinitions="*,3*,*"
+        ColumnDefinitions="*">
+
+        <Label Grid.Row="0"
+            Grid.Column="0"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center"
+            FontAttributes="Bold"
+            FontSize="20"
+            TextColor="Black"
+            Text="Contact List" />
+
+        <ListView Grid.Row="1"
+            Grid.Column="0"
+            ItemsSource="{Binding Contacts}"
+            x:Name="Lv"
+            ItemTapped="ContactSelected">
             <ListView.ItemTemplate>
                 <DataTemplate x:DataType="{x:Type models:Contact}">
-                    <TextCell Text="{Binding ContactName}" Detail="{Binding ContactEmail}"/>
+                    <ViewCell>
+                        <Border BackgroundColor="White"
+                            Stroke="Black"
+                            StrokeThickness="2"
+                            StrokeShape="RoundRectangle 20"
+                            Padding="20">
+                            <VerticalStackLayout>
+                                <Label TextColor="Black" FontSize="14" Text="{Binding ContactName}" />
+                                <Label TextColor="Black" FontSize="12" Text="{Binding ContactEmail}" />
+                            </VerticalStackLayout>
+                        </Border>
+                    </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <Button Text="Back to Home" Clicked="Button_Clicked"/>
+
+        <Border Grid.Row="2"
+        Grid.Column="0"
+        BackgroundColor="Grey"
+        Stroke="Black"
+        StrokeThickness="2"
+        StrokeShape="RoundRectangle 20">
+            <Button BackgroundColor="Transparent" TextColor="Black" Text="Back to Home" Clicked="BackButton_Clicked"/>
+        </Border>
     </Grid>
 </ContentPage>

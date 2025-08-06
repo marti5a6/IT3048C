@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KIM.Views.AddFridgeItem"
+             xmlns:vm="clr-namespace:KIM.Models.ViewModels"
+             x:DataType="vm:FridgeItemListViewModel">
+    <Grid RowDefinitions="*,3*,3*" ColumnDefinitions="*" RowSpacing="20" BackgroundColor="White">
+        <Border Grid.Row="0" BackgroundColor="LightGrey" Stroke="Transparent" StrokeThickness="0" StrokeShape="Rectangle" Padding="20,0,0,0">
+            <Label Text="Create Item" HorizontalOptions="Start" VerticalOptions="Center" FontSize="25" TextColor="Black" FontAttributes="Bold"/>
+        </Border>
+        
+        <VerticalStackLayout Grid.Row="1" Margin="20,0,20,0" Spacing="20">
+            <Entry x:Name="category" TextColor="Black" BackgroundColor="WhiteSmoke" Placeholder="Category" Text="{Binding FridgeItem.Category}"/>
+            <Entry x:Name="name" TextColor="Black" BackgroundColor="WhiteSmoke" Placeholder="Name" Text="{Binding FridgeItem.Name}"/>
+            <Entry x:Name="quantity" TextColor="Black" BackgroundColor="WhiteSmoke" Placeholder="Quantity" Text="{Binding FridgeItem.Quantity}"/>
+            <Entry x:Name="expirationDate" TextColor="Black" BackgroundColor="WhiteSmoke" Placeholder="Expiration Date (Optional)" Text="{Binding FridgeItem.ExpirationDate}"/>
+        </VerticalStackLayout>
+
+        <VerticalStackLayout Grid.Row="2" Margin="20,0,20,0" Spacing="20">
+            <Border HeightRequest="75" BackgroundColor="Grey" Stroke="Black" StrokeThickness="3" StrokeShape="RoundRectangle 20" Margin="20,0,20,0">
+                <Button Command="{Binding AddCommand}" Clicked="Btn_Create" FontSize="20" Text="Create" TextColor="White" BackgroundColor="Transparent"/>
+            </Border>
+
+            <Border HeightRequest="75" BackgroundColor="Grey" Stroke="Black" StrokeThickness="3" StrokeShape="RoundRectangle 20" Margin="20,0,20,0">
+                <Button Clicked="Btn_Back" FontSize="20" Text="Back" TextColor="White" BackgroundColor="Transparent"/>
+            </Border>
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>

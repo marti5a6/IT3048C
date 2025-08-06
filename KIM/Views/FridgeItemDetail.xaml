@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KIM.Views.FridgeItemDetail"
+             xmlns:vm="clr-namespace:KIM.Models.ViewModels"
+             xmlns:Models="clr=-namespace:KIM.Models"
+             x:DataType="vm:FridgeItemDetailViewModel">
+    <Grid RowDefinitions="*,3*,3*" ColumnDefinitions="*" RowSpacing="20" BackgroundColor="White">
+        <Border Grid.Row="0" BackgroundColor="LightGrey" Stroke="Transparent" StrokeThickness="0" StrokeShape="Rectangle" Padding="20,0,0,0">
+            <Label Text="Item Details" HorizontalOptions="Start" VerticalOptions="Center" FontSize="25" TextColor="Black" FontAttributes="Bold"/>
+        </Border>
+        <VerticalStackLayout Grid.Row="1" Spacing="20">
+            <Label Margin="20,0,20,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span FontSize="15" TextColor="Black" FontAttributes="Bold" Text="Category: " />
+                        <Span FontSize="15" TextColor="Black" Text="{Binding FridgeItem.Category}" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Margin="20,0,20,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span FontSize="15" TextColor="Black" FontAttributes="Bold" Text="Name: " />
+                        <Span FontSize="15" TextColor="Black" Text="{Binding FridgeItem.Name}" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Margin="20,0,20,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span FontSize="15" TextColor="Black" FontAttributes="Bold" Text="Quantity: " />
+                        <Span FontSize="15" TextColor="Black" Text="{Binding FridgeItem.Quantity}" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Margin="20,0,20,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span FontSize="15" TextColor="Black" FontAttributes="Bold" Text="Expiration Date: " />
+                        <Span FontSize="15" TextColor="Black" Text="{Binding FridgeItem.ExpirationDate}" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        </VerticalStackLayout>
+
+
+        <VerticalStackLayout Grid.Row="2" Margin="20,0,20,0" Spacing="20" x:DataType="vm:FridgeItemListViewModel">
+            <!-- Add Edit Command and Logic for Edit + Delete -->
+            <Border HeightRequest="75" BackgroundColor="Grey" Stroke="Black" StrokeThickness="3" StrokeShape="RoundRectangle 20" Margin="20,0,20,0">
+                <Button Clicked="Btn_Edit" FontSize="20" Text="Edit" TextColor="White" BackgroundColor="Transparent"/>
+            </Border>
+
+            <Border HeightRequest="75" BackgroundColor="Grey" Stroke="Black" StrokeThickness="3" StrokeShape="RoundRectangle 20" Margin="20,0,20,0">
+                <Button Clicked="Btn_Back" FontSize="20" Text="Back" TextColor="White" BackgroundColor="Transparent"/>
+            </Border>
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>

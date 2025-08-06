@@ -1,16 +1,42 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Module10ContactListUsingMVVM.Views.HomePage"
-             xmlns:vm="clr-namespace:Module10ContactListUsingMVVM.Models.ViewModels"
-             x:DataType="vm:ContactsListViewModel"
-             Title="Home Page">
-    <VerticalStackLayout>
-        <Entry x:Name="contactName" Placeholder="Contact Name" Text="{Binding Contact.ContactName}"/>
-        <Entry x:Name="contactEmail" Placeholder="Contact Email" Text="{Binding Contact.ContactEmail}"/>
-        <Entry x:Name="contactPhone" Placeholder="Contact Phone" Text="{Binding Contact.ContactPhone}"/>
-        <Entry x:Name="contactDescription" Placeholder="Contact Description" Text="{Binding Contact.ContactDescription}"/>
-        <Button x:Name="createButton" Text="Create Contact" Command="{Binding AddCommand}" Clicked="Button_Clicked"/>
-        <Button Text="View Contacts" Clicked="Button_Clicked"/>
-    </VerticalStackLayout>
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Module10ContactListUsingMVVM.Views.HomePage"
+    xmlns:vm="clr-namespace:Module10ContactListUsingMVVM.Models.ViewModels"
+    x:DataType="vm:ContactsListViewModel">
+    <Grid BackgroundColor="CornflowerBlue"
+        Padding="10"
+        RowDefinitions="*,*,*,*,*,*"
+        ColumnDefinitions="*"
+        RowSpacing="10">
+
+        <Label Grid.Row="0"
+            Grid.Column="0"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center"
+            FontAttributes="Bold"
+            FontSize="20"
+            TextColor="Black"
+            Text="Create a Contact" />
+
+        <Border Grid.Row="1" Grid.Column="0" BackgroundColor="White" Stroke="Black" StrokeThickness="2" StrokeShape="RoundRectangle 20">
+            <Entry x:Name="contactName" Placeholder="Contact Name" TextColor="Black" Text="{Binding Contact.ContactName}"/>
+        </Border>
+
+        <Border Grid.Row="2" Grid.Column="0" BackgroundColor="White" Stroke="Black" StrokeThickness="2" StrokeShape="RoundRectangle 20">
+            <Entry x:Name="contactEmail" Placeholder="Contact Email" TextColor="Black" Text="{Binding Contact.ContactEmail}"/>
+        </Border>
+
+        <Border Grid.Row="3" Grid.Column="0" BackgroundColor="White" Stroke="Black" StrokeThickness="2" StrokeShape="RoundRectangle 20">
+            <Entry x:Name="contactPhone" Placeholder="Contact Phone" TextColor="Black" Text="{Binding Contact.ContactPhone}"/>
+        </Border>
+
+        <Border Grid.Row="4" Grid.Column="0" BackgroundColor="White" Stroke="Black" StrokeThickness="2" StrokeShape="RoundRectangle 20">
+            <Entry x:Name="contactDescription" Placeholder="Contact Description" TextColor="Black" Text="{Binding Contact.ContactDescription}"/>
+        </Border>
+
+        <Border Grid.Row="5" Grid.Column="0" BackgroundColor="Grey" Stroke="Black" StrokeThickness="2" StrokeShape="RoundRectangle 20">
+            <Button x:Name="saveButton" BackgroundColor="Transparent" TextColor="Black" Text="Save Contact" Command="{Binding AddCommand}" Clicked="SaveButton_Clicked"/>
+        </Border>
+    </Grid>
 </ContentPage>

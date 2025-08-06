@@ -12,7 +12,7 @@ public partial class HomePage : ContentPage
 		BindingContext = contactsViewModel;
 	}
 
-	private void Button_Clicked(object sender, EventArgs e)
+	private void SaveButton_Clicked(object sender, EventArgs e)
 	{
 		var contactList = new ContactsList();
 		contactList.BindingContext = contactsViewModel;

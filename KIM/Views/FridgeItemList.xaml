@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KIM.Views.FridgeItemList"
+             xmlns:vm="clr-namespace:KIM.Models.ViewModels"
+             xmlns:models="clr-namespace:KIM.Models"
+             x:DataType="vm:FridgeItemListViewModel">
+    <Grid RowDefinitions="*,*,5*" ColumnDefinitions="*" RowSpacing="20" BackgroundColor="White">
+        <Border Grid.Row="0" BackgroundColor="LightGrey" Stroke="Transparent" StrokeThickness="0" StrokeShape="Rectangle" Padding="20,0,0,0">
+            <Label Text="KIM" HorizontalOptions="Start" VerticalOptions="Center" FontSize="25" TextColor="Black" FontAttributes="Bold"/>
+        </Border>
+
+        <Border HeightRequest="75"  Grid.Row="1" BackgroundColor="Grey" Stroke="Black" StrokeThickness="3" StrokeShape="RoundRectangle 20" Margin="20,0,20,0">
+            <Button Clicked="Btn_Add" FontSize="20" Text="Add Item" TextColor="White" BackgroundColor="Transparent" />
+        </Border>
+
+        <ListView Grid.Row="2" x:Name="Lv" ItemsSource="{Binding FridgeItems}" ItemTapped="Lv_ItemTapped" Margin="20,0,20,0">
+            <ListView.ItemTemplate>
+                <DataTemplate x:DataType="{x:Type models:FridgeItem}">
+                    <ViewCell>
+                        <StackLayout>
+                            <Label Text="{Binding Name}" FontSize="15" TextColor="Black" FontAttributes="Bold" Margin="20,20,20,0" />
+                            <Label Text="{Binding Category}" FontSize="15" TextColor="Black" Margin="20,0,20,0"/>
+                            <BoxView HeightRequest="1" BackgroundColor="Black" Margin="0,20,0,0" />
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+</ContentPage>

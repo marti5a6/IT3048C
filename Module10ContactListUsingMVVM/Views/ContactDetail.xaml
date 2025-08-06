@@ -1,21 +1,41 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Module10ContactListUsingMVVM.Views.ContactDetail"
-             xmlns:vm="clr-namespace:Module10ContactListUsingMVVM.Models.ViewModels"
-             x:DataType="vm:ContactDetailViewModel"
-             Title="Contact Detail">
-    <Grid>
-        <TableView Intent="Data">
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Module10ContactListUsingMVVM.Views.ContactDetail"
+    xmlns:vm="clr-namespace:Module10ContactListUsingMVVM.Models.ViewModels"
+    x:DataType="vm:ContactDetailViewModel">
+    <Grid BackgroundColor="CornflowerBlue" 
+        Padding="10"
+        RowDefinitions="*,*,*"
+        ColumnDefinitions="*">
+
+        <Label Grid.Row="0"
+            Grid.Column="0"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center"
+            FontAttributes="Bold"
+            FontSize="20"
+            TextColor="Black"
+            Text="Contact Details" />
+
+        <TableView Grid.Row="1" Grid.Column="0" Intent="Data">
             <TableRoot>
                 <TableSection>
-                    <TextCell Text="Contact Name" Detail="{Binding Contact.ContactName}"/>
+                    <TextCell Text="{Binding Contact.ContactName}"/>
                     <TextCell Text="Contact Email" Detail="{Binding Contact.ContactEmail}"/>
                     <TextCell Text="Contact Phone" Detail="{Binding Contact.ContactPhone}"/>
                     <TextCell Text="Contact Description" Detail="{Binding Contact.ContactDescription}"/>
                 </TableSection>
             </TableRoot>
         </TableView>
-        <Button Text="Back to Contacts" Clicked="Button_Clicked"/>
+
+        <Border Grid.Row="2"
+            Grid.Column="0"
+            BackgroundColor="Grey"
+            Stroke="Black"
+            StrokeThickness="2"
+            StrokeShape="RoundRectangle 20">
+            <Button BackgroundColor="Transparent" Grid.Row="2" Grid.Column="0" Text="Back to Contacts" Clicked="Button_Clicked"/>
+        </Border>
     </Grid>
 </ContentPage>
