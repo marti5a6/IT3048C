@@ -7,9 +7,9 @@ public partial class FridgeItemDetail : ContentPage
 		InitializeComponent();
 	}
 
-    private void Btn_Edit(object sender, EventArgs e)
+    private void Btn_Delete(object sender, EventArgs e)
     {
-        // Edit + Delete Logic
+        // Delete Logic
     }
 
     private void Btn_Back(object sender, EventArgs e)

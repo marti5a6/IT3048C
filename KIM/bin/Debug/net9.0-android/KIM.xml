@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>KIM</name>
+    </assembly>
+    <members>
+        <member name="T:KIM.Models.ViewModels.FridgeItemDetailViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:KIM.Models.ViewModels.FridgeItemDetailViewModel.FridgeItem">
+            <inheritdoc cref="F:KIM.Models.ViewModels.FridgeItemDetailViewModel.fridgeItem"/>
+        </member>
+        <member name="T:KIM.Models.ViewModels.FridgeItemListViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:KIM.Models.ViewModels.FridgeItemListViewModel.FridgeItems">
+            <inheritdoc cref="F:KIM.Models.ViewModels.FridgeItemListViewModel.fridgeItems"/>
+        </member>
+        <member name="P:KIM.Models.ViewModels.FridgeItemListViewModel.FridgeItem">
+            <inheritdoc cref="F:KIM.Models.ViewModels.FridgeItemListViewModel.fridgeItem"/>
+        </member>
+        <member name="F:KIM.Models.ViewModels.FridgeItemListViewModel.addCommand">
+            <summary>The backing field for <see cref="P:KIM.Models.ViewModels.FridgeItemListViewModel.AddCommand"/>.</summary>
+        </member>
+        <member name="P:KIM.Models.ViewModels.FridgeItemListViewModel.AddCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:KIM.Models.ViewModels.FridgeItemListViewModel.Add"/>.</summary>
+        </member>
+        <member name="F:KIM.Models.ViewModels.FridgeItemListViewModel.deleteCommand">
+            <summary>The backing field for <see cref="P:KIM.Models.ViewModels.FridgeItemListViewModel.DeleteCommand"/>.</summary>
+        </member>
+        <member name="P:KIM.Models.ViewModels.FridgeItemListViewModel.DeleteCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:KIM.Models.ViewModels.FridgeItemListViewModel.Delete(KIM.Models.FridgeItem)"/>.</summary>
+        </member>
+        <member name="T:KIM.Resource">
+            <summary>
+            Android Resource Designer class.
+            Exposes the Android Resource designer assembly into the project Namespace.
+            </summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.FridgeItem">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "FridgeItem" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.FridgeItems">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "FridgeItems" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.FridgeItem">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "FridgeItem" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.FridgeItems">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "FridgeItems" generated properties.</summary>
+        </member>
+    </members>
+</doc>

@@ -48,10 +48,10 @@
         </VerticalStackLayout>
 
 
-        <VerticalStackLayout Grid.Row="2" Margin="20,0,20,0" Spacing="20" x:DataType="vm:FridgeItemListViewModel">
-            <!-- Add Edit Command and Logic for Edit + Delete -->
+        <VerticalStackLayout Grid.Row="2" Margin="20,0,20,0" Spacing="20">
+            <!-- Add Edit Command and Logic for Delete -->
             <Border HeightRequest="75" BackgroundColor="Grey" Stroke="Black" StrokeThickness="3" StrokeShape="RoundRectangle 20" Margin="20,0,20,0">
-                <Button Clicked="Btn_Edit" FontSize="20" Text="Edit" TextColor="White" BackgroundColor="Transparent"/>
+                <Button FontSize="20" Text="Delete" TextColor="White" BackgroundColor="Transparent"/>
             </Border>
 
             <Border HeightRequest="75" BackgroundColor="Grey" Stroke="Black" StrokeThickness="3" StrokeShape="RoundRectangle 20" Margin="20,0,20,0">

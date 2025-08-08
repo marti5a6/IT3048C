@@ -10,7 +10,17 @@
         </Border>
         
         <VerticalStackLayout Grid.Row="1" Margin="20,0,20,0" Spacing="20">
-            <Entry x:Name="category" TextColor="Black" BackgroundColor="WhiteSmoke" Placeholder="Category" Text="{Binding FridgeItem.Category}"/>
+            <Picker x:Name="category" Title="Category" SelectedItem="{Binding FridgeItem.Category}" TitleColor="Black" TextColor="Black" BackgroundColor="WhiteSmoke">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Fridge</x:String>
+                        <x:String>Freezer</x:String>
+                        <x:String>Pantry</x:String>
+                        <x:String>Other</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+            <!--<Entry x:Name="category" TextColor="Black" BackgroundColor="WhiteSmoke" Placeholder="Category" Text="{Binding FridgeItem.Category}"/>-->
             <Entry x:Name="name" TextColor="Black" BackgroundColor="WhiteSmoke" Placeholder="Name" Text="{Binding FridgeItem.Name}"/>
             <Entry x:Name="quantity" TextColor="Black" BackgroundColor="WhiteSmoke" Placeholder="Quantity" Text="{Binding FridgeItem.Quantity}"/>
             <Entry x:Name="expirationDate" TextColor="Black" BackgroundColor="WhiteSmoke" Placeholder="Expiration Date (Optional)" Text="{Binding FridgeItem.ExpirationDate}"/>

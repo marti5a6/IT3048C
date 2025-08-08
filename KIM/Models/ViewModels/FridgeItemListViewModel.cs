@@ -18,4 +18,13 @@ partial class FridgeItemListViewModel : ObservableObject
         FridgeItems.Add(FridgeItem);
         FridgeItem = new();
     }
+
+    [RelayCommand]
+    private void Delete(FridgeItem item)
+    {
+        if (item != null)
+        {
+            FridgeItems.Remove(item);
+        }
+    }
 }
