@@ -7,6 +7,7 @@ namespace KIM.Models.ViewModels;
 
 partial class FridgeItemDetailViewModel : ObservableObject
 {
+    // Bind selected "fridgeItem" object from Observable Collection for detail view
     [ObservableProperty]
     private FridgeItem fridgeItem;
 }

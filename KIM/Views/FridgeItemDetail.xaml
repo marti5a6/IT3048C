@@ -5,10 +5,14 @@
              xmlns:vm="clr-namespace:KIM.Models.ViewModels"
              xmlns:Models="clr=-namespace:KIM.Models"
              x:DataType="vm:FridgeItemDetailViewModel">
+    <!-- Create Grid -->
     <Grid RowDefinitions="*,3*,3*" ColumnDefinitions="*" RowSpacing="20" BackgroundColor="White">
+        <!-- Page Header -->
         <Border Grid.Row="0" BackgroundColor="LightGrey" Stroke="Transparent" StrokeThickness="0" StrokeShape="Rectangle" Padding="20,0,0,0">
             <Label Text="Item Details" HorizontalOptions="Start" VerticalOptions="Center" FontSize="25" TextColor="Black" FontAttributes="Bold"/>
         </Border>
+        
+        <!-- VerticalStackLayout of FridgeItem object values -->
         <VerticalStackLayout Grid.Row="1" Spacing="20">
             <Label Margin="20,0,20,0">
                 <Label.FormattedText>
@@ -47,7 +51,7 @@
             </Label>
         </VerticalStackLayout>
 
-
+        <!-- Buttons to Edit the FridgeItem object or navigate to the previous page -->
         <VerticalStackLayout Grid.Row="2" Margin="20,0,20,0" Spacing="20">
             <!-- Add Edit Command and Logic for Delete -->
             <Border HeightRequest="75" BackgroundColor="Grey" Stroke="Black" StrokeThickness="3" StrokeShape="RoundRectangle 20" Margin="20,0,20,0">

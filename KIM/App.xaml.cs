@@ -8,6 +8,7 @@ namespace KIM
         {
             InitializeComponent();
 
+            // Setup navigation and make FridgeItemList the Home Page
             MainPage = new NavigationPage(new FridgeItemList());
         }
     }
